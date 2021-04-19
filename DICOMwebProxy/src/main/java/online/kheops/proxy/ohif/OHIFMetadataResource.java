@@ -87,9 +87,12 @@ public class OHIFMetadataResource {
         }
 
         return String.format("{\n" +
-                "   \"transactionId\":\"testDICOMs\",\n" +
-                "   \"servers\": {\n" +
-                "      \"dicomWeb\": [\n" +
+                "   \"dataSources\": [\n" +
+                "   {\n" +
+                "     \"friendlyName\": \"DICOMWeb Server\",\n" +
+                "     \"namespace\": \"org.ohif.default.dataSourcesModule.dicomweb\",\n" +
+                "     \"sourceName\": \"dicomweb\",\n" +
+                "      \"configuration\": \n" +
                 "         {\n" +
                 "            \"name\": \"DCM4CHEE\",\n" +
                 "            \"wadoUriRoot\": \"%s/wado\",\n" +
@@ -100,8 +103,8 @@ public class OHIFMetadataResource {
                 "            \"thumbnailRendering\": \"wadors\",\n" +
                 "            \"enableStudyLazyLoad\": true\n" +
                 "         }\n" +
-                "      ]\n" +
-                "   }\n" +
+                "      }\n" +
+                "   ]\n" +
                 "}\n" +
                 "\n", dicomWebURI, dicomWebURI, dicomWebURI);
     }

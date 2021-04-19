@@ -5,5 +5,5 @@ module.exports = {
   REALM_KEYCLOAK: '"StaticLoginConnect"',
   CLIENTID: '"loginConnect"',
   URL_API: '"https://demo.kheops.online"',
-  URL_VIEWER: '"https://ohif.kheops.online"'
+  URL_VIEWER: '"http://localhost:3000/"'
 }
